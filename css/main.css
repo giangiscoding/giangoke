@@ -455,14 +455,15 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 6em;
+    padding-top: 6em;
+    padding-bottom: 6em;
     gap: 40px;
     flex-wrap: wrap;
   }
   
 
   .about__box img {
-    width: 30em;
+    width: 27em;
     height: auto;
     border-radius: 10px;
   }
@@ -491,10 +492,10 @@ header {
   }
 
   .about__box .text .list-container{
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
 
     li{
       color: #000000;
