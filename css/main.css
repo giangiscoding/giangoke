@@ -138,12 +138,13 @@ header {
 
 .navbar__link {
   list-style: none;
-  margin: 2em;
+  margin: 1.5em;
 }
 
 .navbar__link a {
   text-decoration: none;
   font-size: 1rem;
+  font-style: bold;
   color: #000000;
   font-weight: 500;
   transition: var(--smooth);
@@ -156,10 +157,11 @@ header {
 
 .navbar button {
   color: #fff; /* Màu chữ */
-  padding: 0.5rem 1rem; /* Khoảng đệm trong button */
+  padding: 0.4rem 1rem; /* Khoảng đệm trong button */
   font-size: 1rem; /* Cỡ chữ */
+  font-style: bold;
   border: none; /* Bỏ viền button */
-  border-radius: 10px; /* Bo tròn góc button */
+  border-radius: 20px; /* Bo tròn góc button */
   cursor: pointer; /* Con trỏ chuột dạng tay khi hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển mượt */
 }
@@ -170,27 +172,9 @@ header {
 }
 
 .navbar__btn {
-  font-size: 1rem;
   background-color: #0b0c0c;
   margin-left: 2em;
   position:relative;
-}
-
-.navbar__btn:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
 }
 
 .navbar__btn:active {
@@ -326,7 +310,7 @@ header {
 
 #home button {
   color: #fff; /* Màu chữ */
-  padding: 0.8rem 1.5rem; /* Khoảng đệm trong button */
+  padding: 0.5rem 1rem; /* Khoảng đệm trong button */
   font-size: 1rem; /* Cỡ chữ */
   border: none; /* Bỏ viền button */
   border-radius: 10px; /* Bo tròn góc button */
@@ -560,7 +544,7 @@ header {
   font-size: 1.5rem;
   font-family: "Syne", sans-serif;
   font-weight: 300;
-  color: #D34B29;
+  color: #000;
   margin-bottom: 30px;
 }
 
@@ -1351,6 +1335,7 @@ iframe {
   width: 70%;
   height: auto;
   align-items: center;
+  gap: 20px;
 }
 
 .slider {
