@@ -1488,7 +1488,7 @@ iframe {
 footer {
   background-color: #D34B29;
   position: relative;
-  padding-top: 100px;
+  padding: 80px 10px;
 
   h2 {
     position: absolute;
