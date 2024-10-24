@@ -479,7 +479,7 @@ header {
     margin-left: 10px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 
     li{
       color: #000000;
