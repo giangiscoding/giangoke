@@ -1102,10 +1102,10 @@ header {
   }
   
   .masonry {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
     overflow: auto;
   }
