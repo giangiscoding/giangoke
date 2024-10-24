@@ -325,6 +325,7 @@ header {
 
 .home__heading{
   margin: 0 auto;
+  width: 63%;
 }
 
 @media (max-width: 1024px) {
@@ -337,15 +338,16 @@ header {
 
   .home__heading{
     margin: 50px 15px;
+    width: auto;
   }
 
   .home__heading h1 {
-    font-size: 2rem;
+    font-size: 2em;
     font-family: "Syne", sans-serif;
   }
 
   .name{
-    font-size: 3rem;
+    font-size: 3em;
   }
 }
 
@@ -479,7 +481,7 @@ header {
     margin-left: 10px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: git;
 
     li{
       color: #000000;
