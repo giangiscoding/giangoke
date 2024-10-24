@@ -1537,6 +1537,9 @@ footer .contact__box p{
 .copy-icon {
   cursor: pointer;
   color: #ffffff;
+  a{
+    text-decoration: none;
+  }
 }
 
 .contact__box svg{
