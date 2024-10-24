@@ -752,6 +752,7 @@ header {
     background-color: #D34B29;
     border: none;
     color: #ECE9E3;
+    white-space: nowrap;
     padding: 0.1rem 0.7rem;
     text-align: center;
     display: inline-block;
