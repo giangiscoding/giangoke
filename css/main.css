@@ -1103,7 +1103,8 @@ header {
   .masonry {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
     max-width: 100%;
   }
   
@@ -1439,15 +1440,15 @@ iframe {
       border-radius: 8px;
   }
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+  .intro {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
 
 
   .introhaha{
