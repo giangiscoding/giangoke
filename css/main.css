@@ -324,7 +324,6 @@ header {
 }
 
 .home__heading{
-  width: 45em;
   margin: 0 auto;
 }
 
@@ -394,7 +393,7 @@ header {
     font-size: 2.5rem;
   }
   #home .name{
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
 }
@@ -415,6 +414,7 @@ header {
 #about {
   background-color: #F2A7B6;
   position: relative;
+  padding: 150px 10px;
 
   h2 {
     position: absolute;
@@ -489,13 +489,11 @@ header {
     }
   }
 
-  
-  /* Đảm bảo bố cục vẫn đẹp ở kích thước nhỏ */
   @media (max-width: 1024px) {
     #about {
       background-color: #F2A7B6;
       position: relative;
-      padding: 120px 10px;
+      padding: 90px 10px;
     }
 
     .about__box {
@@ -519,7 +517,7 @@ header {
 #skills {
   color: #fff;
   position: relative;
-  padding: 120px 30px;
+  padding: 150px 10px;
 
   h2 {
     position: absolute;
@@ -626,7 +624,7 @@ header {
 @media (max-width: 1024px) {
   #skills {
     justify-content: space-between;
-    padding: 120px 15px;
+    padding: 150px 15px;
   }
 
   .skill__item {
@@ -640,7 +638,7 @@ header {
 
 #project1 {
   position: relative; /* Vị trí tương đối cho phần tử chứa */
-  padding: 120px 10px; /* Khoảng đệm cho phần trên và dưới, bên trái và phải */
+  padding: 150px 10px; /* Khoảng đệm cho phần trên và dưới, bên trái và phải */
   background-color: #E7B345; /* Màu nền cho phần dự án */
 
   h2 {
@@ -684,7 +682,8 @@ header {
   display: grid; /* Sử dụng grid cho bố cục lưới */
   grid-template-columns: repeat(2, 1fr); /* 2 cột ngang */
   gap: 40px; /* Khoảng cách giữa các dự án */
-  max-width: 65em; /* Kích thước tối đa của .project__box */
+  width: 70%; /* Kích thước tối đa của .project__box */
+  max-width: 1400px;
   margin: 0px auto; /* Căn giữa trong khung nhìn */
 }
 
@@ -709,6 +708,7 @@ header {
   object-fit: cover;
   border-radius: 8px;
 }
+
 #project1 .project1__item p {
   color: #000000;
   font-family: "Inter", sans-serif;
@@ -722,6 +722,7 @@ header {
 @media (max-width: 1024px) {
   .project1__box {
     grid-template-columns: 1fr; /* 1 cột dọc cho màn hình nhỏ */
+    width: 100%;
     gap: 10px;
   }
 }
@@ -740,7 +741,7 @@ header {
 
 #project2 {
   position: relative; /* Vị trí tương đối cho phần tử chứa */
-  padding: 120px 10px; /* Khoảng đệm cho phần trên và dưới, bên trái và phải */
+  padding: 150px 10px; /* Khoảng đệm cho phần trên và dưới, bên trái và phải */
   background-color: #fff; /* Màu nền cho phần dự án */
 
   h2 {
@@ -774,7 +775,8 @@ header {
   color: #D34B29;
   display: grid; /* Sử dụng grid cho bố cục lưới */
   grid-template-columns: 1fr; /* 1 cột dọc */
-  max-width: 60%; /* Kích thước tối đa của .project__box */
+  width: 70%;
+  max-width: 1400px;
   margin: 0 auto; /* Căn giữa trong khung nhìn */
   gap:20px
 }
@@ -835,7 +837,7 @@ header {
   }
 
   .project2__box {
-    max-width: 100%;
+    width: 100%;
   }
   .project2__content{
     height: auto;
@@ -876,7 +878,7 @@ header {
 #project4 {
   background-color: #ECE9E3;
   position: relative;
-  padding: 7em;
+  padding: 150px 10px;
 
   h2 {
     position: absolute;
@@ -902,7 +904,6 @@ header {
   font-family: "Syne", sans-serif;
   font-style: bold;
   font-weight: 600;
-  margin-top: 20px;
   margin-bottom: 40px;
 } 
 
@@ -910,8 +911,8 @@ header {
   .masonry {
     display: flex;
     justify-content: center;
-    width: 90%;
-    max-width: 900px;
+    width: 70%;
+    max-width: 1400px;
     height: auto;
     margin: auto;
     gap: 10px;
@@ -1019,28 +1020,27 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(25, 25, 26, 0.932), rgba(41, 41, 41, 0));
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
     padding-left: 10px;
     align-items:end;
     opacity: 0;
     transition: opacity 0.5s ease;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
   }
 
   #project4 .masonry h3{
-    color: #D34B29;
-    font-size: 20px;
+    color: #fff;
+    font-size: 0.9rem;
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 5px;
   }
 
   #project4 .masonry p{
-    color:#D34B29;
-    font-size:14px;
+    color:#fff;
+    font-size:0.6rem;
     text-align:left;
     font-style: bold;
     font-weight: 500;
@@ -1060,7 +1060,7 @@ header {
 @media (max-width: 1024px) {
   #project4 {
     position: relative;
-    padding: 120px 10px;
+    padding: 150px 10px;
     background-color: #ECE9E3;
     overflow: auto;
   }
@@ -1158,7 +1158,7 @@ header {
 #certification {
   background-color: #C75C6F;
   position: relative;
-  padding: 100px;
+  padding: 150px 10px;
   align-items: center;
   justify-items: center;
 
@@ -1223,6 +1223,7 @@ iframe {
   align-items: center;
   justify-items: center;
   width: 70%;
+  max-width: 1400px;
   height: auto;
 }
 
@@ -1267,7 +1268,7 @@ iframe {
 @media (max-width: 1024px){
   #certification {
     position: relative;
-    padding: 120px 10px;
+    padding: 150px 10px;
   }
   #certification .certificate-box{
     margin: 0px;
@@ -1312,11 +1313,12 @@ iframe {
   transform: scale(1.3);
 }
 
+
+
 #activities {
   position: relative; /* Vị trí tương đối cho phần tử chứa */
   display:flex;
   background-color: #fff; /* Màu nền cho phần dự án */
-  align-items: center;
   justify-content: center;
 
   h2 {
@@ -1325,7 +1327,7 @@ iframe {
     border: none;
     color: #ECE9E3;
     padding: 2px 12px;
-    margin-top: 20px;
+    margin-top: 18px;
     display: block;
     font-size: 13px;
     font-weight: 500;
@@ -1334,12 +1336,14 @@ iframe {
 }
 
 .activities-container{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
   width: 70%;
+  max-width: 1400px;
+  gap:10px;
+  margin: 20px;
   height: auto;
-  align-items: center;
-  gap: 20px;
+  align-items:center;
+  justify-content: center;
 }
 
 .slider {
@@ -1349,15 +1353,13 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 85%;
-  margin: auto;
+  width: 55%;
 }
 
 .intro {
-  width: 25em;
+  width: 45%;
   height: 30em;
-  padding-top: 60px;
+  padding-top: 7%;
 }
 
 .introhaha{
@@ -1423,11 +1425,19 @@ iframe {
 }
 
 @media (max-width: 1024px) {
-
+  #activities h2 {
+    position: absolute;
+    background-color: #F2A7B6;
+    border: none;
+    color: #ECE9E3;
+    padding: 2px 12px;
+    margin-top: 60px;
+  }
   .activities-container {
     display: flex;
     flex-direction: column; /* Chuyển các phần tử thành một cột */
     width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin-top:90px;
     height: auto;
     padding: 10px;
     gap: 10px; /* Khoảng cách giữa các phần tử con */

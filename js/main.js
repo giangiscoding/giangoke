@@ -75,15 +75,15 @@ const totalCards = cards.length;
 
 function moveSlide(direction) {
     // Kiểm tra kích thước màn hình
-    let cardsVisible = window.innerWidth < 767 ? 1 : 2; // Nếu màn hình nhỏ hơn 767px thì cardsVisible = 1
+    let cardsVisible = 2; // Nếu màn hình nhỏ hơn 1024px thì cardsVisible = 1
 
     currentIndex += direction;
 
-    // Kiểm tra biên giới
+    // Điều chỉnh để tạo hiệu ứng vòng lặp
     if (currentIndex < 0) {
-        currentIndex = 0;
+        currentIndex = totalCards - cardsVisible; // Quay về vị trí cuối
     } else if (currentIndex > totalCards - cardsVisible) {
-        currentIndex = totalCards - cardsVisible;
+        currentIndex = 0; // Quay về vị trí đầu
     }
 
     // Di chuyển slide track
@@ -92,7 +92,6 @@ function moveSlide(direction) {
     const offsetPercent = currentIndex * (cardWidthPercent + marginPercent); // Tính tổng phần trăm offset
     const slideTrack = document.querySelector('.slide-track');
     slideTrack.style.transform = `translateX(-${offsetPercent}%)`; // Sử dụng % thay cho px
-
 }
 
 let items = document.querySelectorAll('.masonry-item');
@@ -102,7 +101,7 @@ let totalItems = items.length;
 
 function updateItems() {
   // Kiểm tra kích thước màn hình
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 1024) {
     // Chỉ áp dụng logic cho màn hình nhỏ
     items.forEach((item, index) => {
       if (index < itemsToShow) {
