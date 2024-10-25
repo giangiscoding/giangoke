@@ -161,7 +161,7 @@ header {
   font-size: 1rem; /* Cỡ chữ */
   font-style: bold;
   border: none; /* Bỏ viền button */
-  border-radius: 20px; /* Bo tròn góc button */
+  border-radius: 10px; /* Bo tròn góc button */
   cursor: pointer; /* Con trỏ chuột dạng tay khi hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển mượt */
 }
@@ -175,36 +175,6 @@ header {
   background-color: #0b0c0c;
   margin-left: 2em;
   position:relative;
-}
-
-.navbar__btn:active {
-  color: #000
-}
-
-.navbar__btn:active:after {
-  background: transparent;
-}
-
-.navbar__btn:hover:before {
-  opacity: 1;
-}
-
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-}
-
-.navbar__btn:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -643,7 +613,6 @@ header {
     font-style: bold;
     font-weight: 600;
     color: #ECE9E3;
-    margin-bottom: 50px;
   }
 
 }
@@ -660,7 +629,8 @@ header {
 .project1__box {
   display: grid; /* Sử dụng grid cho bố cục lưới */
   grid-template-columns: repeat(2, 1fr); /* 2 cột ngang */
-  gap: 40px; /* Khoảng cách giữa các dự án */
+  row-gap: 30px;
+  column-gap: 50px;
   width: 70%; /* Kích thước tối đa của .project__box */
   max-width: 1400px;
   margin: 0px auto; /* Căn giữa trong khung nhìn */
@@ -677,7 +647,6 @@ header {
   height: 12em; /* Chiều cao của hình ảnh */
   background-color: #d7dbe1; /* Màu placeholder cho hình ảnh */
   margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
-  margin-top: 20px;
   border-radius: 8px; /* Bo góc cho hình ảnh */
 }
 
@@ -706,7 +675,7 @@ header {
   .project1__box {
     grid-template-columns: 1fr; /* 1 cột dọc cho màn hình nhỏ */
     width: 100%;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
@@ -1330,7 +1299,7 @@ iframe {
     display: block;
     font-size: 13px;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 }
 
@@ -1494,32 +1463,31 @@ iframe {
 footer {
   background-color: #D34B29;
   position: relative;
-  padding: 80px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  padding-top:4.5em;
+  gap:20px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:85px;
-    transform: translate(-50%, -50%); 
-    background-color: #ECE9E3;
+    background-color:#ECE9E3;
     border: none;
     color: #4b4b4b;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
-    font-size: 13px;
+    font-size: 0.7rem;
     font-weight: 500;
     border-radius: 6px;
   }
-}
 
-footer p {
-  text-align: center;
-  color:#fff;
-  font-size: 16px;
-  font-weight: 300;
-  margin-top:20px;
-  margin-bottom: 40px;
+  p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color:  #fff;
+    margin-bottom: 20px;
+  }
 }
 
 .contact__box {
@@ -1529,7 +1497,7 @@ footer p {
 }
 
 footer .contact__box p{
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 500;
 }
