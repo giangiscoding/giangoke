@@ -338,16 +338,16 @@ header {
 
   .home__heading{
     margin: 50px 15px;
-    width: auto;
+    width: 100%;
   }
 
   .home__heading h1 {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: "Syne", sans-serif;
   }
 
   .name{
-    font-size: 3em;
+    font-size: 3rem;
   }
 }
 
@@ -371,7 +371,7 @@ header {
 #home .home__heading p {
   color:#D34B29;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
@@ -541,7 +541,7 @@ header {
 
 #skills p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Syne", sans-serif;
   font-weight: 300;
   color: #000;
