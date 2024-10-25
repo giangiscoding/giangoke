@@ -416,19 +416,18 @@ header {
 #about {
   background-color: #F2A7B6;
   position: relative;
-  padding: 150px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10px;
+  gap:70px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:90px;
-    transform: translate(-50%, -50%); 
     background-color: #C75C6F;
     border: none;
     color: #fff;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
     font-size: 0.7rem;
     font-weight: 500;
     border-radius: 10px;
@@ -441,7 +440,6 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
     padding-bottom: 6em;
     gap: 40px;
     flex-wrap: wrap;
@@ -457,10 +455,11 @@ header {
   /* Định dạng phần text */
   .about__box .text {
     max-width: 45%;
-    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
 
     h3{
-      font-weight: 700;
+      font-weight: 600;
       font-size: 2rem;
       color: #fff;
       font-family: "Syne", sans-serif;
@@ -470,6 +469,7 @@ header {
 
     p{
       font-size: 1rem;
+      color: #000000;
       text-align: justify;
       font-weight: 400;
       line-height: 1.5;
@@ -487,7 +487,7 @@ header {
       color: #000000;
       font-size: 1rem;
       font-weight: 400;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
     }
   }
 
@@ -495,15 +495,13 @@ header {
     #about {
       background-color: #F2A7B6;
       position: relative;
-      padding: 90px 10px;
+      gap:40px;
     }
-
     .about__box .text {
     max-width: 100%;
-    font-size: 1em;
 
     h3{
-      font-weight: 700;
+      font-weight: 600;
       font-size: 2rem;
       color: #fff;
       font-family: "Syne", sans-serif;
@@ -522,18 +520,18 @@ header {
 
     .about__box {
       flex-direction: column; /* Khi màn hình nhỏ, xếp chồng lên nhau */
-      padding: 0;
+      padding-top: 30px;
     }
-      .about__box .text .list-container{
+    .about__box .text .list-container{
         flex-direction: column;
         gap: 0px;
     }
 
     .about__box img {
-      width: 100%; /* Hình ảnh chiếm 60% viewport */
+      width: 100%;
     }
     .about__box .text {
-      max-width: 100%; /* Chiều rộng tối đa của text là 50% viewport */
+      max-width: 100%;
     }
   }
 /* === Skills Section === */
@@ -541,33 +539,32 @@ header {
 #skills {
   color: #fff;
   position: relative;
-  padding: 150px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  gap:70px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:85px;
-    transform: translate(-50%, -50%); 
     background-color: #D34B29;
     border: none;
     color: #fff;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     border-radius: 10px;
   }
 
-}
-
-#skills p {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Syne", sans-serif;
-  font-weight: 300;
-  color: #000;
-  margin-bottom: 30px;
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
 }
 
 .skills__box {
