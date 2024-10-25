@@ -87,7 +87,7 @@ function moveSlide(direction) {
     }
 
     // Di chuyển slide track
-    const cardWidthPercent = 46; // Chiều rộng mỗi thẻ là 46% container
+    let cardWidthPercent = window.innerWidth > 1024 ? 46 : 96; window.addEventListener('resize', () => cardWidthPercent = window.innerWidth > 1024 ? 46 : 95);
     const marginPercent = 4; // Khoảng cách margin là 4% (2% trái + 2% phải)
     const offsetPercent = currentIndex * (cardWidthPercent + marginPercent); // Tính tổng phần trăm offset
     const slideTrack = document.querySelector('.slide-track');

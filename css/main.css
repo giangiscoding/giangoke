@@ -495,6 +495,8 @@ header {
     #about {
       background-color: #F2A7B6;
       position: relative;
+      padding-top: 40px;
+      padding-bottom: 0;
       gap:40px;
     }
     .about__box .text {
@@ -520,7 +522,7 @@ header {
 
     .about__box {
       flex-direction: column; /* Khi màn hình nhỏ, xếp chồng lên nhau */
-      padding-top: 30px;
+      padding-bottom: 2em;
     }
     .about__box .text .list-container{
         flex-direction: column;
@@ -532,6 +534,7 @@ header {
     }
     .about__box .text {
       max-width: 100%;
+      padding-bottom: 0;
     }
   }
 /* === Skills Section === */
@@ -543,7 +546,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 70px;
-  gap:70px;
+  gap:20px;
 
   h2 {
     background-color: #D34B29;
@@ -560,9 +563,10 @@ header {
     text-align: center;
     font-size: 2rem;
     font-family: "Syne", sans-serif;
+    font-style: bold;
     font-weight: 600;
     color: #000;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   
 }
@@ -644,8 +648,11 @@ header {
 
 @media (max-width: 1024px) {
   #skills {
-    justify-content: space-between;
-    padding: 150px 15px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 0;
+    padding: 50px 0;
+    gap:40px;
   }
 
   .skill__item {
@@ -658,36 +665,36 @@ header {
 /* MKT Project */
 
 #project1 {
-  position: relative; /* Vị trí tương đối cho phần tử chứa */
-  padding: 150px 10px; /* Khoảng đệm cho phần trên và dưới, bên trái và phải */
-  background-color: #E7B345; /* Màu nền cho phần dự án */
+  background-color: #E7B345;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10px;
+  gap:20px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:85px;
-    transform: translate(-50%, -50%); 
     background-color: #ECE9E3;
     border: none;
     color: #000000;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     border-radius: 10px;
   }
 
-}
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Syne", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    color: #ECE9E3;
+    margin-bottom: 50px;
+  }
 
-#project1 p {
-  text-align: center; /* Căn giữa cho các đoạn văn trong #project */
-  font-size: 2rem; /* Kích thước chữ */
-  font-weight: 600;
-  font-family: "Syne", sans-serif;
-  font-style: bold;
-  margin-bottom: 30px; /* Khoảng cách dưới đoạn văn */
-  color: #ECE9E3;
 }
 
 #project1 .project1__box h3{
@@ -731,7 +738,7 @@ header {
 }
 
 #project1 .project1__item p {
-  color: #000000;
+  color: #444446;
   font-family: "Inter", sans-serif;
   font-size: 1rem; /* Kích thước chữ cho mô tả dự án */
   font-weight: 400; /* Trọng lượng chữ */
@@ -741,6 +748,10 @@ header {
 }
 
 @media (max-width: 1024px) {
+  #project1 {
+    padding: 40px 10px;
+    gap:20px;
+  }
   .project1__box {
     grid-template-columns: 1fr; /* 1 cột dọc cho màn hình nhỏ */
     width: 100%;
@@ -761,36 +772,34 @@ header {
 /*==Ba project==*/
 
 #project2 {
-  position: relative; /* Vị trí tương đối cho phần tử chứa */
-  padding: 150px 10px; /* Khoảng đệm cho phần trên và dưới, bên trái và phải */
-  background-color: #fff; /* Màu nền cho phần dự án */
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10px;
+  gap:20px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:85px;
-    transform: translate(-50%, -50%); 
-    background-color: #D34B29;
+    background-color:#D34B29;
     border: none;
     color: #ECE9E3;
-    white-space: nowrap;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     border-radius: 10px;
   }
-}
 
-#project2 p {
-  text-align: center; /* Căn giữa cho các đoạn văn trong #project */
-  font-size: 2rem; /* Kích thước chữ */
-  font-weight: 600;
-  font-family: "Syne", sans-serif;
-  font-style: bold;
-  margin-bottom: 30px; /* Khoảng cách dưới đoạn văn */
-  color: #D34B29;
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Syne", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    color:  #D34B29;
+    margin-bottom: 50px;
+  }
 }
 
 .project2__box {
@@ -854,6 +863,10 @@ header {
 }
 
 @media (max-width: 1024px) {
+  #project2 {
+    padding: 40px 10px;
+    gap:20px;
+  }
   .project2__item {
     flex-direction: column;
   }
@@ -864,7 +877,6 @@ header {
   .project2__content{
     height: auto;
     width: 100%;
-    margin-top: 10px;
   }
 
   #project2 p {
@@ -900,34 +912,33 @@ header {
 #project4 {
   background-color: #ECE9E3;
   position: relative;
-  padding: 150px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10px;
+  gap:20px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:85px;
-    transform: translate(-50%, -50%); 
-    background-color: #D34B29;
+    background-color:#E7B345;
     border: none;
     color: #fff;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     border-radius: 10px;
   }
-}
 
-#project4 p {
-  text-align: center;
-  font-size: 2rem;
-  color: #D34B29;
-  font-family: "Syne", sans-serif;
-  font-style: bold;
-  font-weight: 600;
-  margin-bottom: 40px;
-} 
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Syne", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    color:  #E7B345;
+    margin-bottom: 50px;
+  }
+}
 
 @media (min-width: 1025px) {
   .masonry {
@@ -1082,7 +1093,7 @@ header {
 @media (max-width: 1024px) {
   #project4 {
     position: relative;
-    padding: 150px 10px;
+    padding: 40px 10px;
     background-color: #ECE9E3;
     overflow: auto;
   }
@@ -1178,28 +1189,37 @@ header {
 /*---certification---*/
 
 #certification {
+
   background-color: #C75C6F;
   position: relative;
-  padding: 150px 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  padding: 70px 10px;
+  gap:20px;
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top:85px;
-    transform: translate(-50%, -50%); 
-    background-color: #F2A7B6;
+    background-color:#F2A7B6;
     border: none;
     color: #000;
     padding: 0.1rem 0.7rem;
     text-align: center;
-    display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     border-radius: 10px;
   }
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Syne", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    color:  #E7B345;
+    margin-bottom: 50px;
+  }
 }
+
 
 /*pdf-box*/
 .pdf-modal {
@@ -1266,7 +1286,7 @@ iframe {
   font-style: bold;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 5px;
+  padding-top: 20px;
 }
 
 .pdf-description {
@@ -1287,13 +1307,18 @@ iframe {
   padding-top:10px;
 }
 
+#certification .certificate-box h5 {
+  color: #ECE9E3;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
 @media (max-width: 1024px){
   #certification {
-    position: relative;
-    padding: 150px 10px;
-  }
-  #certification .certificate-box{
-    margin: 0px;
+    padding: 40px 10px;
+    gap:10px;
   }
   #certification .certificate-box h3{
     display:block;
@@ -1320,13 +1345,6 @@ iframe {
     right: auto;
     left: 0;
   }
-}
-
-#certification h5 {
-  color: #ECE9E3;
-  font-size: 0.8rem;
-  font-weight: 400;
-  text-align: left;
 }
 
 
@@ -1375,11 +1393,11 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 55%;
+  width: 60%;
 }
 
 .intro {
-  width: 45%;
+  width: 40%;
   height: 30em;
   padding-top: 7%;
 }
@@ -1390,7 +1408,7 @@ iframe {
   font-family: "Syne", sans-serif;
   font-style: bold;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .introhuhu{
@@ -1484,6 +1502,16 @@ iframe {
       text-align: center;
       justify-content: center;
       align-items: center;
+  }
+
+  .card {
+    flex: 0 0 96%;
+    border-radius: 10px;
+    margin: 2% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
   }
 
 
