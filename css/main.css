@@ -577,11 +577,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width:80;
 }
 
 .skill__item {
   margin: 10px;
-  width: 150px;
+  width: 12%;
   text-align: center;
 }
 
@@ -590,62 +591,6 @@ header {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 10px;
-}
-
-.skill__item img[alt="MySQL"] {
-  width: 59px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Python"] {
-  width: 54px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Tableau"] {
-  width: 60px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Power BI"] {
-  width: 54px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="RStudio"] {
-  width: 47px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Google Analytics"] {
-  width: 54px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Excel"] {
-  width: 55px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Google Workspace"] {
-  width: 55px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Figma"] {
-  width: 37px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Illustrator"] {
-  width: 57px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Photoshop"] {
-  width: 57px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Premiere Pro"] {
-  width: 57px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Sprout Social"] {
-  width: 55px; /* hoặc giá trị kích thước phù hợp */
-}
-
-.skill__item img[alt="Meta Spark Studio"] {
-  width: 55px; /* hoặc giá trị kích thước phù hợp */
 }
 
 @media (max-width: 1024px) {
