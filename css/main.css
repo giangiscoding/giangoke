@@ -370,10 +370,11 @@ header {
 
 #home .home__heading p {
   color:#D34B29;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5rem;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 #home .home__heading h1 {
@@ -392,10 +393,10 @@ header {
 
 @media (min-width: 1025px) {
   #home .home__heading h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
   #home .name{
-    font-size: 4rem;
+    font-size: 64px;
   }
 
 }
