@@ -421,7 +421,7 @@ header {
   h2 {
     position: absolute;
     left: 50%;
-    top:4em;
+    top:90px;
     transform: translate(-50%, -50%); 
     background-color: #C75C6F;
     border: none;
@@ -441,7 +441,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 6em;
+    padding-top: 20px;
     padding-bottom: 6em;
     gap: 40px;
     flex-wrap: wrap;
@@ -481,7 +481,7 @@ header {
     margin-left: 10px;
     display: flex;
     flex-direction: row;
-    gap: git;
+    gap: 20px;
 
     li{
       color: #000000;
@@ -498,13 +498,35 @@ header {
       padding: 90px 10px;
     }
 
+    .about__box .text {
+    max-width: 100%;
+    font-size: 1em;
+
+    h3{
+      font-weight: 700;
+      font-size: 2rem;
+      color: #fff;
+      font-family: "Syne", sans-serif;
+      font-style: bold;
+      padding-bottom: 20px;
+    }
+
+    p{
+      font-size: 1rem;
+      text-align: justify;
+      font-weight: 400;
+      line-height: 1.5;
+      padding-bottom: 15px;
+    }
+  }
+
     .about__box {
       flex-direction: column; /* Khi màn hình nhỏ, xếp chồng lên nhau */
       padding: 0;
     }
       .about__box .text .list-container{
         flex-direction: column;
-        gap: 0;
+        gap: 0px;
     }
 
     .about__box img {
