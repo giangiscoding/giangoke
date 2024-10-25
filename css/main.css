@@ -431,7 +431,7 @@ header {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 
   }
@@ -441,7 +441,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 6em;
+    padding-bottom: 3.5em;
     gap: 40px;
     flex-wrap: wrap;
   }
@@ -517,7 +517,7 @@ header {
       text-align: justify;
       font-weight: 400;
       line-height: 1.5;
-      padding-bottom: 15px;
+      padding-bottom: 0px;
     }
   }
 
@@ -558,7 +558,7 @@ header {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 
   p {
@@ -685,7 +685,7 @@ header {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 
   p {
@@ -931,7 +931,7 @@ header {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 
   p {
@@ -1070,7 +1070,7 @@ header {
 
   #project4 .masonry h3{
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 5px;
@@ -1083,7 +1083,7 @@ header {
     font-style: bold;
     font-weight: 500;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 
   .masonry-item:hover .overlay2 {
@@ -1212,7 +1212,7 @@ header {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 
   p {
@@ -1404,7 +1404,7 @@ iframe {
 }
 
 .intro {
-  width: 40%;
+  width: 50%;
   height: 30em;
   padding-top: 7%;
 }
@@ -1484,10 +1484,10 @@ iframe {
     display: flex;
     flex-direction: column; /* Chuyển các phần tử thành một cột */
     width: 100%; /* Chiếm toàn bộ chiều rộng */
-    margin-top:90px;
+    margin-top:20px;
     height: auto;
     padding: 10px;
-    gap: 10px; /* Khoảng cách giữa các phần tử con */
+    gap: 6px; /* Khoảng cách giữa các phần tử con */
 }
 
   .slider {
@@ -1497,7 +1497,7 @@ iframe {
       align-items: center;
       justify-content: center;
       width: 100%; /* Chiếm toàn bộ chiều rộng của container */
-      height: 400px;
+      height: 100%;
       border-radius: 8px;
   }
 
@@ -1559,7 +1559,7 @@ footer {
     display: inline-block;
     font-size: 13px;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 6px;
   }
 }
 
